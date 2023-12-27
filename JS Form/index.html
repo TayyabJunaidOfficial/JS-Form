@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form</title>
+    <link rel="stylesheet" href="/Assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-green-600 to-yellow-400 ...">
+    <header class="bg-transparent text-center p-3 font-serif">
+        <h1 class="text-white text-7xl">Registration Form</h1>
+        <p class="text-white text-3xl">Enter Details Below</p>
+    </header>
+    <br>
+    <section class="h-[100%]">
+        <div class="bg-green-600 w-[500px] p-6 rounded-3xl m-auto drop-shadow-[0_0_10px_green]">
+            <form action="" id="Form">
+                <div class="bg-yellow-400 w-[300px] h-[300px] m-auto rounded-2xl">
+                        <img src="./Assets/images/pngwing.com.png" alt="" class="w-52 m-auto mb-4 img" id="input_img">
+                        <label for="upload-image" class="font-extrabold font-mono bg-gradient-to-r from-green-600 to-yellow-400 ...  rounded-lg text-lg text-white px-4 py-2 mx-[4em] cursor-pointer hover:bg-green-700">Upload Image</label>
+                        <input type="file" accept="Image/jpeg Image/png Image/jpg" id="upload-image" class="hidden img-input">
+                </div>
+                <div class="flex flex-col mt-2"> 
+                    <input type="text" placeholder="Name" id="input-name" required class="outline-none text-lg p-2 m-2 rounded-full">
+                    <input type="text" placeholder="Address" id="input-address" required class="outline-none text-lg p-2 m-2 rounded-full">
+                    <input type="email" placeholder="Email" id="input-email" required class="outline-none text-lg p-2 m-2 rounded-full">
+                    <input type="tel" placeholder="Contact No." id="input-phone" required class="outline-none text-lg p-2 m-2 rounded-full">
+                    <button type="submit" class="font-extrabold font-mono bg-gradient-to-r from-green-600 to-yellow-400 ... rounded-lg text-lg text-white px-4 py-2 mx-[4em] cursor-pointer hover:bg-green-700 submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="h-[100%] mt-5 flex flex-col">
+        <h1 class="font-bold font-serif text-7xl text-white py-10 text-center mt-6 mb-6">Result</h1>
+        <div class="bg-green-600 flex flex-col">
+            <table id="table">
+                <tr>
+                    <td><img alt=""></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <script src="./Assets/js/script.js"></script>
+</body>
+</html>
